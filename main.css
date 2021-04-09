@@ -1,0 +1,97 @@
+body {
+	background-color: #E5E5E5;
+	color: #482C66;
+}
+
+/*text styling*/
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	/*text-align: center;*/
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 18px;
+	/*text-align: center;*/
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
+	/*text-align: center;*/
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	/*text-align: center;*/
+}
+
+/*image*/
+
+.grid {
+	display: flex;
+	flex-direction: row;
+}
+
+.art-container {
+	display: inline-block;
+	margin: 20px;
+	justify-content: space-around;
+
+}
+
+.art-image {
+	height: 16%;
+	width: auto;
+}
+
+.art-image:hover{
+	cursor: pointer;
+}
+
+/*filter*/
+
+.filter {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	margin-left: 32px;
+	margin-top: 20px;
+	word-spacing: 8px;
+}
+
+.filter:hover{
+	cursor: pointer;
+}
+
+.art-title {
+	display: none;
+}
+
+.art-artist {
+	display: none;
+}
+
+.art-year {
+	display: none;
+}
+
+.art-title.active {
+	display: block;
+}
+
+.art-artist.active {
+	display: block;
+}
+
+.art-year.active {
+	display: block;
+}
