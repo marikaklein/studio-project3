@@ -1,37 +1,39 @@
 body {
 	background-color: #E5E5E5;
 	color: #482C66;
+	cursor: default;
+	font-family: 'Lato', sans-serif;
 }
 
 /*text styling*/
 
 h1 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	/*text-align: center;*/
+	font-weight: 900;
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.name {
+	position: fixed;
+	margin-top: 5px;
+	margin-left: 35vw;
 }
 
 h2 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-style: italic;
+	font-weight: 700;
 	font-size: 18px;
-	/*text-align: center;*/
 }
 
 h3 {
-	font-family: 'Lato', sans-serif;
-	font-weight: bolder;
+	font-weight: 400;
+	font-style: italic;
 	font-size: 18px;
-	/*text-align: center;*/
 }
 
 p {
-	font-family: 'Lato', sans-serif;
 	font-weight: normal;
-	font-size: 18px;
-	/*text-align: center;*/
+	font-size: 18px; 
 }
 
 /*image*/
@@ -39,18 +41,20 @@ p {
 .grid {
 	display: flex;
 	flex-direction: row;
+    height: calc(100vh - 100px);
 }
 
 .art-container {
 	display: inline-block;
-	margin: 20px;
+	margin: 30px;
 	justify-content: space-around;
 
 }
 
 .art-image {
-	height: 16%;
-	width: auto;
+	height: auto;
+	width: 270px;
+	margin-top: 75px;
 }
 
 .art-image:hover{
@@ -60,12 +64,13 @@ p {
 /*filter*/
 
 .filter {
+	position: fixed;
 	font-family: 'Lato', sans-serif;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 18px;
-	margin-left: 32px;
-	margin-top: 20px;
-	word-spacing: 8px;
+	margin-top: 60px;
+	margin-left: 23vw;
+	word-spacing: 14px;
 }
 
 .filter:hover{
@@ -94,4 +99,8 @@ p {
 
 .art-year.active {
 	display: block;
+}
+
+.hidden {
+	display: none;
 }
