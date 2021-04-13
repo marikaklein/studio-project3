@@ -52,13 +52,17 @@ function showArt() {
 		artImage.classList.add("art-image");
 		artImage.src = art.fields.image[0].url;
 		artContainer.append(artImage);
+
+		// let captionContainer = document.createElement("div");
+		// captionContainer.classList.add("caption-container");
+		// document.querySelector(".art-container").append(captionContainer);
 	
-		let artTitle = document.createElement("h1");
+		let artTitle = document.createElement("h2");
 		artTitle.classList.add("art-title");
 		artTitle.innerText = art.fields.title;
 		artContainer.append(artTitle);
 
-		let artArtist = document.createElement("h2");
+		let artArtist = document.createElement("h3");
 		artArtist.classList.add("art-artist");
 		artArtist.innerText = art.fields.artist;
 		artContainer.append(artArtist);
@@ -71,6 +75,9 @@ function showArt() {
 		// toggle
 
 		artContainer.addEventListener("click", function() {
+		 
+		 	// document.querySelector('.active').classList.add("hidden");
+
 			artTitle.classList.toggle("active");
 			artArtist.classList.toggle("active");
 			artYear.classList.toggle("active");
@@ -87,9 +94,9 @@ function showArt() {
 		filterSculpture.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("sculpture")) {
-				artImage.style.display = "block"
+				artContainer.style.display = "block"
 			} else {
-				artImage.style.display = "none"
+				artContainer.style.display = "none"
 			}
 		})
 
@@ -97,9 +104,9 @@ function showArt() {
 		filterPainting.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("painting")) {
-				artImage.style.display = "block"
+				artContainer.style.display = "block"
 			} else {
-				artImage.style.display = "none"
+				artContainer.style.display = "none"
 			}
 		})
 
@@ -107,9 +114,9 @@ function showArt() {
 		filterPhotography.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("photography")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
@@ -117,9 +124,9 @@ function showArt() {
 		filterPrint.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("print")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
@@ -127,9 +134,9 @@ function showArt() {
 		filterMixed_Media.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("mixed_media")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
@@ -137,9 +144,9 @@ function showArt() {
 		filterDrawing.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("drawing")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
@@ -147,9 +154,9 @@ function showArt() {
 		filterFilm.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("film")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
@@ -157,15 +164,15 @@ function showArt() {
 		filterTextile.addEventListener("click", function() {
 
 			if (artContainer.classList.contains("textile")) {
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 			} else {
-				artImage.style.display = "none";
+				artContainer.style.display = "none";
 			}
 		})
 
 		var filterReset = document.querySelector('.js-reset')
 		filterReset.addEventListener("click", function(){
-				artImage.style.display = "block";
+				artContainer.style.display = "block";
 		})
 	});
 };
