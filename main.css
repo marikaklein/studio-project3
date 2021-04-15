@@ -1,7 +1,7 @@
 body {
-	background: linear-gradient(-45deg, #686868, #969696, #C9C9C9, #E5E5E5);
+	background: linear-gradient(-45deg, #204E5C, #4F8A3F, #969696, #C9C9C9, #E5E5E5);
 	background-size: 3500% 400%;
-	color: #482C66;
+	color: #352672;
 	cursor: default;
 	font-family: 'Lato', sans-serif;
 }
@@ -17,7 +17,7 @@ h1 {
 
 .name {
 	position: fixed;
-	margin-top: 5px;
+	margin-top: 8px;
 	margin-left: 35vw;
 }
 
@@ -30,24 +30,6 @@ h3 {
 	font-weight: 400;
 	font-style: italic;
 	font-size: 18px;
-}
-
-h4 {
-	font-size: 14px;
-}
-
-.old {
-	font-weight: lighter;
-	position: fixed;
-	margin-top: 650px;
-	margin-left: 15px;
-}
-
-.new {
-	font-weight: lighter;
-	position: fixed;
-	margin-top: 650px;
-	margin-left: 1395px;
 }
 
 p {
@@ -71,9 +53,9 @@ p {
 }
 
 .art-image {
-	height: 400px;
+	height: 430px;
 	width: auto;
-	margin-top: 75px;
+	margin-top: 100px;
 }
 
 .art-image:hover{
