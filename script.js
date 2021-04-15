@@ -40,22 +40,16 @@ function showArt() {
 	console.log("showArt()");
 	art.forEach((art) => {
 
-		// div classes for images and text
-
+	// div classes for images and text
 		let artContainer = document.createElement("div");
 		artContainer.classList.add("art-container");
 		document.querySelector(".grid").append(artContainer);
 
-		// airtable info
-
+	// airtable info
 		let artImage = document.createElement("img");
 		artImage.classList.add("art-image");
 		artImage.src = art.fields.image[0].url;
 		artContainer.append(artImage);
-
-		// let captionContainer = document.createElement("div");
-		// captionContainer.classList.add("caption-container");
-		// document.querySelector(".art-container").append(captionContainer);
 	
 		let artTitle = document.createElement("h2");
 		artTitle.classList.add("art-title");
@@ -72,19 +66,14 @@ function showArt() {
 		artYear.innerText = art.fields.year;
 		artContainer.append(artYear);
 
-		// toggle
-
+	// toggle
 		artContainer.addEventListener("click", function() {
-		 
-		 	// document.querySelector('.active').classList.add("hidden");
-
 			artTitle.classList.toggle("active");
 			artArtist.classList.toggle("active");
 			artYear.classList.toggle("active");
 		})
 
-		// filter options
-
+	// filter options
 		var artMedium = art.fields.medium;
 		artMedium.forEach(function(medium) {
 			artContainer.classList.add(medium)
