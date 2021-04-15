@@ -1,5 +1,6 @@
 body {
-	background-color: #E5E5E5;
+	background: linear-gradient(-45deg, #686868, #969696, #C9C9C9, #E5E5E5);
+	background-size: 3500% 400%;
 	color: #482C66;
 	cursor: default;
 	font-family: 'Lato', sans-serif;
@@ -31,6 +32,24 @@ h3 {
 	font-size: 18px;
 }
 
+h4 {
+	font-size: 14px;
+}
+
+.old {
+	font-weight: lighter;
+	position: fixed;
+	margin-top: 635px;
+	margin-left: 15px;
+}
+
+.new {
+	font-weight: lighter;
+	position: fixed;
+	margin-top: 635px;
+	margin-left: 1395px;
+}
+
 p {
 	font-weight: normal;
 	font-size: 18px; 
@@ -52,8 +71,8 @@ p {
 }
 
 .art-image {
-	height: auto;
-	width: 270px;
+	height: 400px;
+	width: auto;
 	margin-top: 75px;
 }
 
@@ -99,8 +118,4 @@ p {
 
 .art-year.active {
 	display: block;
-}
-
-.hidden {
-	display: none;
 }
